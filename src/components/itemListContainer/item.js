@@ -1,4 +1,4 @@
-import ItemCount from "./itemCount";
+import ItemCount from "./itemCount"
 import '../itemListContainer/item.css';
 import itemImg from '../../images/bici.jpg';
 import { Link } from "react-router-dom";
