@@ -21,6 +21,6 @@ function ItemDetailContainer() {
       {producto ? <ItemDetail item={producto} /> : <p>cargando detalles...</p>}
     </div>
   )
-}
+};
 
 export default ItemDetailContainer
