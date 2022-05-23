@@ -72,7 +72,7 @@ const productos = [
         stock: 10,
         id: '8',    
     },
-];
+]
 
 export const getData = (id) => {
     return new Promise((resolve) => {
