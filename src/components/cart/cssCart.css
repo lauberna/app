@@ -1,0 +1,20 @@
+.cart{
+    color: white;
+    margin-right: 15px;
+    font-size: 30px;
+    position: relative;
+  }
+
+.cont{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  margin-right: 10px
+}
+.CartWidget{
+  opacity: .8;
+}
+
+.CartWidget:hover{
+  opacity: 1;
+}
