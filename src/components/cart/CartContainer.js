@@ -1,9 +1,8 @@
-import { useCartContext } from "../context/CartContext"
-
+import './cartContainer.css'
 const CartContainer = () => {
 
   return (
-    <div>cart</div>
+    <div className="Carrito">El carrito se encuentra vacio</div>
   )
 }
 

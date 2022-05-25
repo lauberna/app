@@ -7,7 +7,7 @@ function Cart() {
   return (
     <Link to="/Cart">
       <div className="CartWidget" >
-          <a href="/cart"><AiOutlineShoppingCart className="cart"/></a>
+          <a><AiOutlineShoppingCart className="cart"/></a>
       </div>
     </Link>
   )

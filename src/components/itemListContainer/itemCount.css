@@ -50,3 +50,26 @@
 .itemCount__plusBtn:hover{
     color:aqua
 }
+.finish{
+    border: none;
+    background: none;
+    color: white;
+    
+}
+.seguir{
+    border: none;
+    background: none;
+    color: white;
+
+}
+.finish:hover{
+    transition: .5s;
+    color:aqua;
+
+}
+.seguir:hover{
+  
+    color: aqua;
+    transition: .5s;
+    
+}
