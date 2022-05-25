@@ -27,7 +27,7 @@
 .inf {
     z-index: 2;
     position: absolute;
-    margin-left: 61%;
+    margin-left: 61.5%;
     align-items: center;
     text-align:left;
     color: white;
@@ -42,7 +42,7 @@
     height: 600px;
 }
 .contenedor{
-
+width: 500px;
     margin-top: 8px;
 }
 .contenedorCount{
@@ -51,4 +51,17 @@
 }
 .detail{
     font-size: 18px;
+    text-align: justify;
+}
+.Btn1{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 12px;
+    border-bottom: solid 1px;
+}
+.Btn1:hover{
+    color: cadetblue;
+    transition: .3s;
 }

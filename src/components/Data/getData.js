@@ -7,7 +7,9 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
-        id: '1',    
+        id: '1',
+        initial: '1',
+
     },
     {
         name: 'Bicicleta 2',
@@ -16,7 +18,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 13,
-        id: '2',    
+        id: '2',
+        initial: '1',    
     },
     {
         name: 'Bicicleta 3',
@@ -26,6 +29,7 @@ const productos = [
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
         id: '3',    
+        initial: '1',
     },
     {
         name: 'Bicicleta 4',
@@ -34,7 +38,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
-        id: '4',    
+        id: '4',  
+        initial: '1',  
     },
     {
         name: 'Bicicleta 5',
@@ -43,7 +48,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
-        id: '5',    
+        id: '5', 
+        initial: '1',   
     },
     {
         name: 'Indumentaria 1',
@@ -52,7 +58,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
-        id: '6',    
+        id: '6',   
+        initial: '1', 
     },
     {
         name: 'Indumentaria 2',
@@ -61,7 +68,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 3,
-        id: '7',    
+        id: '7',   
+        initial: '1', 
     },
     {
         name: 'Indumentaria 3',
@@ -70,7 +78,8 @@ const productos = [
         img: '',
         description:'La Procaliber 9.5 es una bicicleta rígida de carbono ligera con la ventaja exclusiva de nuestra rótula IsoSpeed que absorbe los baches de los senderos. Se trata del modelo de carbono más económico de toda la gama de montaña Procaliber, y está diseñado para ofrecer velocidad y eficiencia en los singletracks gracias a su transmisión Shimano Deore 1x12 con una amplia relación de desarrollos, a la horquilla RockShox Judy SL y a las rápidas ruedas 29er.',    
         stock: 10,
-        id: '8',    
+        id: '8',  
+        initial: '1',  
     },
 ]
 

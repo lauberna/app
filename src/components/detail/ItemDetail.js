@@ -1,17 +1,23 @@
 import React from 'react'
+import { useCartContext } from '../context/CartContext'
 import ItemCount from '../itemListContainer/itemCount'
 import itemImg from '../../images/bici.jpg';
 import './itemDetail.css'
+import { Link } from 'react-router-dom'
+import Intercambiabilidad from './Intercambiabilidad';
 
 
 
 function ItemDetail({item}) {
 
+    const {addToCart, cartList} = useCartContext()
+
     const onAdd = (cant) => {
-        alert(`agregaste ${cant} productos`)
+      console.log(cant)
     }
 
-    console.log(item)
+    console.log(cartList)
+
   return (
     <div className="itemDetail">
             <div className='inf'>
@@ -21,6 +27,11 @@ function ItemDetail({item}) {
                 <div className='contenedor'>
                   <p className="detail">{item.description}</p>
                 </div>
+                  <div className='seguir'>
+                <Link to='/'>
+                    <button className='Btn1'>Seguir comprando</button>
+                </Link>
+                  </div>
                 <div className='contenedorCount'>
                   <ItemCount initial={1} stock={item.stock} onAdd={onAdd}/>
                 </div>

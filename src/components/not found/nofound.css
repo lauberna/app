@@ -1,0 +1,20 @@
+.text{
+    margin-left: 39%;
+    margin-top: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.btn1{
+    margin-left: 49%;
+    font-size: 11px;
+    margin-top: 10px;
+    border-bottom: solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none
+}
+.btn1:hover{
+    font-size: 12px;
+    color: aqua;
+    transition: .5s;
+}

@@ -1,9 +1,34 @@
 import { useState } from 'react';
 import './itemCount.css'
+import { Link } from 'react-router-dom'
 import { GrAdd } from "react-icons/gr";
-function ItemCount({stock, initial, onAdd}) {
-    const [cantidad, setCantidad] = useState(initial);
 
+
+
+
+const Input= ()=> {
+
+    return (
+        <>
+        <Link to='/cart' >
+            <button 
+                className="btn btn-outline-primary" 
+                onClick={()=>console.log('ir a cart') } 
+            >Ir al Cart o Terminar compra</button>
+        </Link>
+        <Link to='/' >
+            <button 
+                className="btn btn-outline-primary" 
+                onClick={()=>console.log('ir al home') } 
+            >Seguir comprando</button>
+        </Link>
+        </>
+    )
+}
+
+
+function InputCount({stock, initial, onAdd, handleInter}) {
+    const [cantidad, setCantidad] = useState(initial);
     function increase() {
         if (cantidad < stock) {
             setCantidad(cantidad + 1);
@@ -20,6 +45,7 @@ function ItemCount({stock, initial, onAdd}) {
     }
     function addToCart() {
         onAdd(cantidad);
+        
     }
 
     return (
@@ -27,8 +53,32 @@ function ItemCount({stock, initial, onAdd}) {
             <button id='less' className="itemCount__minusBtn" onClick={decrease}>-</button>
             <span className="itemCount__quantity">{cantidad}</span>
             <button id='plus' className="itemCount__plusBtn" onClick={increase}>+</button>
-            <button className="itemCount__addToCartBtn" onClick={addToCart}><GrAdd/></button>
+            <button className="itemCount__addToCartBtn"  onClick={handleInter}><GrAdd/></button>
         </div>
     );
 }
-export default ItemCount
+
+const Intercambiabilidad = ({initial, stock, name, cantidad}) => {
+
+    const [inputType, setInputType ] = useState('button')
+
+    const handleInter=({cantidad})=>{
+        setInputType('input')   
+    }
+    
+    return (
+        <div>
+            <h2>Item Description</h2>
+            
+            {
+                inputType === 'button' ? 
+                    <InputCount handleInter={handleInter} initial={initial} stock={stock} cantidad={cantidad} />
+                : 
+                    <Input />
+            }
+             {/* <Count onConfirm={addToCart} maxQuantity={itemMax} />  */}
+        </div>
+    )
+}
+
+export default Intercambiabilidad

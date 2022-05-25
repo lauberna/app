@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 
 const Item = ({prod}) => {
     //console.log(prod)
-    const onAdd = (cantidad) => {
-        alert(`Agregaste ${ cantidad } productos`);
-    };
 
     return(
         <div className="item">
