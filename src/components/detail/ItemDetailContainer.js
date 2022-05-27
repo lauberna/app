@@ -14,11 +14,10 @@ function ItemDetailContainer() {
     .catch((err)=>console.log(err))
   }, [])
 
-  console.log(producto)
-  console.log(detalleId)
+  
   return (
     <div className='IDC'>
-      {producto ? <ItemDetail item={producto} /> : <p>cargando detalles...</p>}
+      <ItemDetail item={producto} /> 
     </div>
   )
 };
