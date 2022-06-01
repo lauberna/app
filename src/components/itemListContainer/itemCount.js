@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import './itemCount.css'
-import { Link } from 'react-router-dom'
 import { GrAdd } from "react-icons/gr";
-import { useCartContext } from '../context/CartContext';
+
 
 
 export const handleInter = () => {
@@ -26,9 +25,11 @@ function ItemCount({stock, initial, handleInputType, item, onAdd}) {
           alert(`el minimo es de ${initial} productos`)
         }
     }
+    
     function addToCart() {
       onAdd(cantidad)
       handleInputType()
+      
     }
     
 

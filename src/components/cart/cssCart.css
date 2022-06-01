@@ -18,3 +18,7 @@
 .CartWidget:hover{
   opacity: 1;
 }
+
+.CartWidget1{
+  opacity: .2;
+}

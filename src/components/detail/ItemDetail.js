@@ -23,7 +23,7 @@ function ItemDetail({item}) {
 
 
   const onAdd = (count) => {
-    console.log(`Has agregado ${count} producto/s a tu carrito`)
+    
     addToCart( { ...item, count} )
   }
 
@@ -35,6 +35,7 @@ function ItemDetail({item}) {
                 <p className='stock'>{`el stock es de ${item.stock} unidades`}</p>
                 <div className='contenedor'>
                   <p className="detail">{item.description}</p>
+                  
                 </div>
                   <div className='seguir'>
                   </div>
