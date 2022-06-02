@@ -17,8 +17,8 @@ const CartContextProvider = ({children}) => {
     }
     function addToCart(item) {
         if (isInCart(item.id)) {
-            alert("ya agregaste este producto")
             let i = cartList.findIndex(el => el.id === item.id);
+            console.log(i)
             const newCartList = cartList;
             newCartList[i].quantity += item.quantity;
             setCartList(newCartList);
@@ -27,32 +27,8 @@ const CartContextProvider = ({children}) => {
             setCartList([
                 ...cartList,item]);
                 actualizarCarrito()
-                console.log('producto agregado al carrito')
-                console.log(item)
-                
-                
         }
     }
-
-    // function addToCart(item){
-    //     if(cartList.some(article => article.id === item.id)){
-    //        const newCart = cartList.map(article => {
-    //            if(article.id === item.id) {
-    //                article.count = item.count + article.count;
-    //            }
-    //            return article;
-    //        })
-    //     setCartList(newCart);
-
-    //     }
-    //     else {
-    //         setCartList([
-    //             ...cartList,
-    //             item
-    //         ])
-    //     }
-    // }
-
     const deleteItem = (id) => {
         const newCart = [...cartList];
         let index = newCart.findIndex((product) => product.id ===id);
@@ -78,6 +54,7 @@ const CartContextProvider = ({children}) => {
     
     function aumentar(product) {
         if(product.count == product.stock){
+            
 
         }else{
             setCantidad(product.count++);

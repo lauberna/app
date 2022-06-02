@@ -1,27 +1,39 @@
 .contenedor{
     color: white;
+    text-align: center;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.padre{
+    margin-top: 10%;
+}
+.vacio{
+    margin: 10px;
+    font-size: 19px;
+}
+.inicio{
     border: none;
-  
+    background: none;
+    border-bottom: solid 1px;
+    color: white;
+    font-size: 13px;
+}
+.inicio:hover{
+    color:aquamarine;
+    transition: .5s;
 }
 .contenedor1{
-    z-index: 3;
+    padding-top: 10px;
 }
 .cartFondo{
     height: 500px;
     width: 1000px;
-    border: solid 1px;
     align-items: center;
     border-radius: 10px;
-    background: rgba(42, 41, 41, 0.8);
-}
-.cartFondo1{
-    height: 450px;
-    width: 950px;
-    border: solid 1px ;
-    margin: 2.5%;
-    border-radius: 10px;
-    background: rgb(53, 52, 52,);
-   
+    background: rgba(193, 193, 193, 0.3);
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
 }
 .tPrice{
     color: white;

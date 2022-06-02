@@ -5,6 +5,11 @@
     position: relative;
   }
 
+.cart:hover{
+  color:rgb(156, 255, 222);
+  transition: .6;
+}
+
 .cont{
   font-size: 15px;
   color: white;
@@ -13,6 +18,7 @@
 }
 .CartWidget{
   opacity: .8;
+  transition: .5s;
 }
 
 .CartWidget:hover{
