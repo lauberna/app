@@ -1,33 +1,31 @@
 import React,{ useState } from 'react'
-import '../navBar/Navbar.css'
-import {GiMountains} from 'react-icons/gi'
 import { Link } from 'react-router-dom'
+import {CgMusicSpeaker} from 'react-icons/cg'
+
 import Cart from '../cart/Cart.js'
 
-
-
+import '../navBar/Navbar.css'
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-    <div className="Navbar">
-        <GiMountains className="nav-logo" />
-        <div className={`nav-items ${isOpen && "open"}`}>
-          <Link to="/"><a>Home</a></Link>
-          <Link to="/categoria/bicicletas"><a>Bicicletas</a></Link>
-          <Link to="/categoria/indumentaria"><a>Indumentaria</a></Link>
-        
-            
-        </div>
-        <div>
-          <Cart/>
-        </div>
-        <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
-          <div className="bar"></div>
-        </div>
-    </div>
-    
+      <div className="Navbar">
+        <Link to='/'>
+          <CgMusicSpeaker className="nav-logo" />
+        </Link>
+          <div className={`nav-items ${isOpen && "open"}`}>
+            <Link to="/categoria/auriculares"><>Auriculares</></Link>
+            <Link to="/categoria/consolas"><>Consolas</></Link>
+            <Link to="/categoria/parlantes"><>Parlantes</></Link>
+          </div>
+          <div>
+            <Cart/>
+          </div>
+          <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+            <div className="bar"></div>
+          </div>
+      </div>
     </>
   )
 }

@@ -3,15 +3,19 @@
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background: rgb(0, 0, 0);
+  background: linear-gradient(rgb(0,0,0),rgba(0,0,0,.8) ,rgba(0,0,0,0))
+}
+
+.nav-logo {
+  margin: 10px;
+  font-size:45px;
+  color: white
 }
 
 
-
-.Navbar > .nav-logo {
-  margin: 15px;
-  font-size:50px;
-  color: white
+.nav-logo:hover{
+  rotate: -180deg;
+  transition: .7s;
 }
 
 
@@ -112,13 +116,13 @@
   }
 
   .nav-toggle.open > .bar {
-      transform: translateX(-40px);
-      background: transparent;
+    transform: translateX(-40px);
+    background: transparent;
   }
 
   .nav-toggle.open > .bar::before {
-      width: 32px;
-      transform: rotate(45deg) translate(26px, -26px);
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
   }
 
   .nav-toggle.open > .bar::after {

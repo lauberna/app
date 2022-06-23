@@ -1,27 +1,17 @@
-import ItemCount from "./itemCount"
-import '../itemListContainer/item.css'
-import itemImg from '../../images/bici.jpg';
 import { Link } from "react-router-dom";
 
+import '../itemListContainer/item.css'
 
 const Item = ({prod}) => {
-    //console.log(prod)
-
-    return(
-        <div className="item">
-            <img className="img" src={itemImg} alt="" />
-            <Link to={`/detail/${prod.id}`}>
-            <div className="degrade"></div>
-            </Link>
-            <div className='info'>
-                <h3 className="titulo">{prod.name}</h3>
-            </div>
-        </div>
-    )
+  return(
+    <span className="item">
+      <Link to={`/detail/${prod.id}`}>
+        <img className="img" src={prod.img} alt="" />
+      </Link>
+      <h3 className="titulo">{prod.name}</h3>
+    </span>
+  )
 }
-    
-
-    
 
 export default Item;
 

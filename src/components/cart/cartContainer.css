@@ -1,41 +1,41 @@
 .contenedor{
-    color: white;
-    text-align: center;
-    margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .padre{
-    margin-top: 10%;
+  margin-top: 10%;
 }
 .vacio{
-    margin: 10px;
-    font-size: 19px;
+  margin: 10px;
+  font-size: 19px;
 }
 .inicio{
-    border: none;
-    background: none;
-    border-bottom: solid 1px;
-    color: white;
-    font-size: 13px;
+  border: none;
+  background: none;
+  border-bottom: solid 1px;
+  color: white;
+  font-size: 13px;
 }
 .inicio:hover{
-    color:aquamarine;
-    transition: .5s;
+  color:aquamarine;
+  transition: .5s;
 }
 .contenedor1{
-    padding-top: 10px;
+  padding-top: 10px;
 }
-.cartFondo{
-    height: 500px;
-    width: 1000px;
-    align-items: center;
-    border-radius: 10px;
-    background: rgba(193, 193, 193, 0.3);
-    margin: auto;
-    text-align: center;
-    margin-top: 10%;
-}
+
 .tPrice{
-    color: white;
-    font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
+.btn{
+  border: none;
+  margin: 10px;
+  font-size: 15px;
+  background: none;
+  color: white;
+
+}
+

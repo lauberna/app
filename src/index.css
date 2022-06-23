@@ -1,3 +1,8 @@
 body{
-    background-image: url('../public/fondo2.jpg');
+  background-image: url('../src/images/room-musical-instrument-metal-Studio-audio-midnight-788410-wallhere.com.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: relative;
+  padding-bottom: 1em;
+
 }

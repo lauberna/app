@@ -1,28 +1,28 @@
 .botonSeguir{
-    color: white;
-    border: solid 1px;
-    background: none;
-    padding: 3px;
-    cursor: pointer;
+  border: solid 1px;
+  background: none;
+  padding: 3px;
+  cursor: pointer;
+  color: white;
 }
 .botonFin{
-    color: white;
-    background: none;
-    border: solid 1px;
-    padding: 3px;
-    cursor: pointer;
+  color: white;
+  background: none;
+  border: solid 1px;
+  padding: 3px;
+  cursor: pointer;
 }
 
 .botonSeguir:hover{
-    background-color: black;
-    opacity: .6;
-    border: solid .5px black;
-    transition: .4s;
+  background-color: black;
+  opacity: .6;
+  border: solid .5px black;
+  transition: .4s;
     
 }
 .botonFin:hover{
-    background-color: black;
-    opacity: .6;
-    border: solid .5px black;
-    transition: .4s;
+  background-color: black;
+  opacity: .6;
+  border: solid .5px black;
+  transition: .4s;
 }
